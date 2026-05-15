@@ -2,21 +2,18 @@ body {
     margin: 0px;
 }
 
+/*Seção de Serviços*/
 .servicos-container {
     height: 70vh;
-
     background-color: rgba(187, 229, 255, 0.966);
-
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 40px;
-
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;
-
     align-items: center;
 }
 
@@ -43,22 +40,23 @@ body {
     border-radius: 20px;
 }
 
+/*Botões utilizados para passar o carrossel*/
 #preview-button {
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     top: 32%;
-    left: 10px;
+    left: 35px;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 #next-button {
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     top: 32%;
-    right: 10px;
+    right: 35px;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
