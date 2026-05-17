@@ -2,10 +2,21 @@ body {
     margin: 0px;
 }
 
+/*Atribindo fontes especificas ao projeto*/
+@font-face{
+    font-family: "Alice";
+    src: url("../fonts/Alice/Alice-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roca-Two";
+    src: url("../fonts/roca-two-regular-maisfontes.e2ac/roca-two-regular.ttf");
+}
+
 /*Seção de Serviços*/
 .servicos-container {
     height: 70vh;
-    background-color: #f7d8ff;
+    background-color: #e2a9f1;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -18,6 +29,10 @@ body {
 }
 
 .title-servicos {
+    font-family: "Roca-Two";
+    font-size: 40px;
+    font-weight: bold;
+    color: #a94b7c;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -69,13 +84,18 @@ body {
     justify-content: center;
 }
 
-.card-text-container p {
+.card-text {
     text-align: justify;
     margin: 10px;
+    font-family: "Alice";
+    font-size: 20px;
 }
 
 .card-title {
-    font-weight: bold;
+    text-align: justify;
+    margin: 10px;
+    font-family: "Roca-Two";
+    font-size: 40px;
 }
 
 /*Botões utilizados para passar o carrossel*/
@@ -101,7 +121,7 @@ body {
 
 .produtos-container {
     height: 120vh;
-    background-color: rgb(95, 95, 95);
+    background-color: #f7d8ff;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -114,6 +134,10 @@ body {
 }
 
 .title-produtos {
+    font-family: "Roca-Two";
+    font-size: 40px;
+    font-weight: bold;
+    color: #a94b7c;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -122,6 +146,8 @@ body {
 
 .subtitle-produtos {
     align-self: flex-start; /*move o subtitulo para a esquerda */
+    font-family: "Roca-Two";
+    font-size: 25px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -163,14 +189,20 @@ body {
 }
 
 .card-produto img {
+    margin: 10px;
     height: 70%;
     width: 100%;
     object-fit: cover;
 }
 
+.card-produto p {
+    font-family: "Roca-Two";
+    font-size: 20px;
+}
+
 .parceiros-container {
     height: 40vh;
-    background-color: #f7d8ff;
+    background-color: #e2a9f1;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -210,4 +242,15 @@ body {
     height: 80%;
     width: 80%;
     object-fit: cover;
+}
+
+.title-parceiros {
+    font-family: "Roca-Two";
+    font-size: 40px;
+    font-weight: bold;
+    color: #a94b7c;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
