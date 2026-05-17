@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petshop</title>
+     <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     <link rel="stylesheet" href="style/style.css">
+     <script defer src="scripts/app.js"></script>
 </head>
 
 <body>
-
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">PETSHOP</div>
+            <button class="hamburger"></button>
+            <ul class="nav-links">
+                <li class="link-escrito"><a href="#">Home</a></li>
+                <li class="link-escrito"><a href="#">Serviços</a></li>
+                <li class="link-escrito"><a href="#">Categorias</a></li>
+                <li><a href="#"><span class="material-symbols-outlined"> person </span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined"> shopping_bag </span></a></li>
+                <li><div class="pesquisa">
+                    <button class="botaopesquisa">
+                        <span class="material-symbols-outlined"> search </span>
+                    </button>
+                    <input type="text" placeholder="Pesquisar...">
+                </div></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hero"></main>
 </body>
 
 </html>
