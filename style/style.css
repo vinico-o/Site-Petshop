@@ -95,11 +95,6 @@ body {
         padding: 20px;
     }
 
-    .sobrenos {
-        display: flex;
-        flex-direction: column-reverse; /* 🔥 aqui está o segredo */
-    }
-
     .galeria_texto br {
         display: none;
     }
