@@ -58,6 +58,11 @@ body {
     display: flex;
 }
 
+/*Envento de passar o mouse em cima*/
+.card-servico:hover img{
+    transform: scale(1.2);
+}
+
 /*Imagens dentro dos cards*/
 .card-image-container {
     box-sizing: border-box;
@@ -68,10 +73,10 @@ body {
 
 .card-image-container img {
     object-fit: cover;
-    display: flex;
     object-position: right;
     width: 100%;
     height: 100%;
+    transition: transform 0.6s ease;
 }
 
 .card-text-container {
@@ -159,19 +164,8 @@ body {
     margin-bottom: 10px;
 }
 
+.produtos-cards-container-cachorro,
 .produtos-cards-container-gato {
-    height: 50%;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding: 0px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.produtos-cards-container-cachorro {
     height: 50%;
     width: 100%;
     margin-top: 15px;
@@ -193,6 +187,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: box-shadow 0.6s ease;
+}
+
+.card-produto:hover {
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.card-produto:hover img{
+    transform: scale(1.1);
 }
 
 .card-produto img {
@@ -200,6 +204,7 @@ body {
     height: 70%;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.6s ease;
 }
 
 .card-produto p {
@@ -252,10 +257,16 @@ body {
     justify-content: center;
 }
 
+.card-parceiro:hover img {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
 .card-parceiro img {
     height: 80%;
     width: 80%;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 .title-parceiros {
