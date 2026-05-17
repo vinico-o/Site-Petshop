@@ -5,7 +5,7 @@ body {
 /*Seção de Serviços*/
 .servicos-container {
     height: 70vh;
-    background-color: rgba(187, 229, 255, 0.966);
+    background-color: #f7d8ff;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -40,12 +40,13 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
 }
 
 /*Imagens dentro dos cards*/
 .card-image-container {
     box-sizing: border-box;
-    width: 60%;
+    width: 50%;
     height: 100%;
     overflow: hidden;
 }
@@ -56,6 +57,25 @@ body {
     object-position: right;
     width: 100%;
     height: 100%;
+}
+
+.card-text-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text-container p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.card-title {
+    font-weight: bold;
 }
 
 /*Botões utilizados para passar o carrossel*/
@@ -136,11 +156,21 @@ body {
     height: 100%;
     margin: auto;
     border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-produto img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .parceiros-container {
     height: 40vh;
-    background-color: rgb(200, 133, 255);
+    background-color: #f7d8ff;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -153,7 +183,7 @@ body {
 }
 
 .parceiros-cards-container {
-    height: 50%;
+    height: 60%;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -170,4 +200,14 @@ body {
     height: 100%;
     margin: auto;
     border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-parceiro img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
 }
