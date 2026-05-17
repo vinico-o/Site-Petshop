@@ -1,0 +1,66 @@
+body {
+    background-color: #f7d8ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= sobre nós/ que somos ================= */
+
+.sobrenos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #e2a9f1;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.sobrenos figure {
+    margin: 0;
+}
+
+.sobrenos img {
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto_tasso {
+    max-width: 500px;
+}
+
+.titulo_sobrenos {
+    font-size: clamp(40px, 6vw, 100px);
+    color: #a94b7c;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+/* ================= galeira de fotos ================= */
+
+.galeria {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.galeria figure {
+    margin: 0;
+}
+
+.galeria img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.galeria_texto {
+    font-size: clamp(40px, 7vw, 120px);
+    font-weight: bold;
+    line-height: 1;
+    color: #a94b7c;
+    max-width: 500px;
+}
