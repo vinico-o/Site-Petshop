@@ -1,7 +1,19 @@
 body {
     background-color: #f7d8ff;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Alice";
+}
+
+/* ================= Fontes =================  */
+
+@font-face{
+    font-family: "Alice";
+    src: url("../Fonts_Tasso/Alice/Alice-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roca-Two";
+    src: url("../Fonts_Tasso/roca-two-regular-maisfontes.e2ac/roca-two-regular.ttf");
 }
 
 /* ================= sobre nós/ que somos ================= */
@@ -35,6 +47,7 @@ body {
     color: #a94b7c;
     line-height: 1.1;
     margin: 10px 0;
+    font-family: "Roca-Two";
 }
 
 /* ================= galeira de fotos ================= */
@@ -63,4 +76,6 @@ body {
     line-height: 1;
     color: #a94b7c;
     max-width: 500px;
+    font-family: "Roca-Two";
+    
 }
