@@ -723,14 +723,13 @@ footer {
 }
 
 .galeria_texto {
-    font-size: clamp(40px, 7vw, 120px);
+    font-size: clamp(40px, 6.5vw, 120px);
     font-weight: bold;
     line-height: 1;
     color: #a94b7c;
     max-width: 500px;
     font-family: "Roca-Two";
     flex: 1 1 300px;
-    
 }
 
 /* ============================ MOBILE ==============================*/
