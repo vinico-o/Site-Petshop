@@ -1,4 +1,354 @@
-body {
+@charset "UTF-8";
+@font-face{
+    font-family: "Alice";
+    src: url("../fonts/Alice/Alice-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roca-Two";
+    src: url("../fonts/roca-two-regular-maisfontes.e2ac/roca-two-regular.ttf");
+}
+
+:root {
+    --color-neutral-0: #2b2118;
+    --color-neutral-10: #3a2d22;
+    --color-neutral-30: #d2bda3;
+    --color-neutral-40: #fff8f1;
+    --cor-section: #f7d8ff;
+    --cor-titulo: #a94b7c;
+    --cor-fundo-suave: #e2a9f1;
+    --cor-nav: #F3E5D0;
+    --cor-nav2: #A56A3A;
+    --cor-hover-footer: #d6a56f;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+a {
+    margin: 0;
+}
+
+.header{
+    padding-inline: 16px;
+    background: var(--cor-nav);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    padding-block: 16px;
+}
+
+.nav-links a:hover{
+    color: var(--cor-nav2);
+}
+
+.logo {
+    font-family: "Roca-Two";
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--cor-nav2);
+}
+
+.pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pesquisa input{
+    width: 0;
+    opacity: 0;
+    border: none;
+    padding: 5px 0px 8px 10px;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.pesquisa.active input{
+    width: 200px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.botaopesquisa:hover {
+    color: var(--cor-nav2);
+}
+.botaopesquisa{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.link-escrito {
+    padding-top: 5px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+    .nav-links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor-nav);
+    clip-path: circle(100px at 90% -15%);
+    transition: 0.4s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+}
+.nav-links a {
+    
+    font-size: 24px;
+    opacity: 0;
+}
+
+.nav-links li:nth-child(1) a {
+    transition: 0.1s;
+}
+
+.nav-links li:nth-child(2) a {
+    transition: 0.11s;
+}
+
+.nav-links li:nth-child(3) a {
+    transition: 0.12s;
+}
+
+.nav-links li:nth-child(4) a {
+    transition: 0.13s;
+}
+
+.nav-links li:nth-child(5) a {
+    transition: 0.14s;
+}
+.navbar.active .nav-links {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}
+.navbar.active .nav-links a {
+    opacity: 1;
+}
+.navbar.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+}
+.navbar.active .hamburger::before{
+    transform: rotate(135deg);
+}
+
+.navbar.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+.hero-content h1{
+        font-size: 42px;
+        line-height: 0.95;
+        color: #2f2117;
+        text-shadow: 2px 2px 10px white;
+    }
+ .hero-content p{
+        font-size: 24px;
+        color: #fff8f1;
+        line-height: 1.2;
+    }
+}
+
+.hero{
+    height: 500px;
+
+    background-image: url("../imagens/imagem-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-inline: 60px;
+
+    position: relative;
+}
+
+.hero-content{
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.25);
+    max-width: 500px;
+    z-index: 1;
+}
+
+.hero-content h1{
+    color:#2f2117;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: "Roca-Two";
+}
+
+.hero-content p{
+    color: white;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+footer {
+    font-family: "Roca-Two";
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#conteudo_footer {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.5rem 3rem;
+    gap: 1rem;
+}
+
+#contatos_footer h2{
+    margin-bottom: 0.75rem;
+}
+
+#redes_sociais {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#redes_sociais .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#redes_sociais .footer-link i{
+    font-size: 1.25rem;
+}
+
+#redes_sociais .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff29f2, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: var(--color-neutral-30)
+}
+
+.footer-list .footer-link:hover{
+    color: var(--cor-hover-footer);
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 780px) {
+    #conteudo_footer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #conteudo_footer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}body {
     margin: 0px;
 }
 
