@@ -1,15 +1,25 @@
 @charset "UTF-8";
+@font-face{
+    font-family: "Alice";
+    src: url("../fonts/Alice/Alice-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roca-Two";
+    src: url("../fonts/roca-two-regular-maisfontes.e2ac/roca-two-regular.ttf");
+}
 
 :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
+    --color-neutral-0: #2b2118;
+    --color-neutral-10: #3a2d22;
+    --color-neutral-30: #d2bda3;
+    --color-neutral-40: #fff8f1;
     --cor-section: #f7d8ff;
     --cor-titulo: #a94b7c;
     --cor-fundo-suave: #e2a9f1;
-    --cor-teste2: #F3E5D0;
-    --cor-teste: #A56A3A;
+    --cor-nav: #F3E5D0;
+    --cor-nav2: #A56A3A;
+    --cor-hover-footer: #d6a56f;
 }
 * {
     margin: 0px;
@@ -20,12 +30,11 @@
 
 a {
     margin: 0;
-    font-family: "Saira", sans-serif;
 }
 
 .header{
     padding-inline: 16px;
-    background: var(--cor-teste2);
+    background: var(--cor-nav);
     position: relative;
     z-index: 1000;
 }
@@ -53,13 +62,14 @@ a {
 }
 
 .nav-links a:hover{
-    color: var(--cor-teste);
+    color: var(--cor-nav2);
 }
 
 .logo {
+    font-family: "Roca-Two";
     font-weight: 800;
     font-size: 20px;
-    color: var(--cor-teste);
+    color: var(--cor-nav2);
 }
 
 .pesquisa{
@@ -87,7 +97,7 @@ a {
 }
 
 .botaopesquisa:hover {
-    color: var(--cor-teste);
+    color: var(--cor-nav2);
 }
 .botaopesquisa{
     background: none;
@@ -138,7 +148,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--cor-teste2);
+    background: var(--cor-nav);
     clip-path: circle(100px at 90% -15%);
     transition: 0.4s ease-out;
     flex-direction: column;
@@ -193,6 +203,17 @@ a {
     transform: rotate(-135deg);
     top: -7px;
 }
+.hero-content h1{
+        font-size: 42px;
+        line-height: 0.95;
+        color: #2f2117;
+        text-shadow: 2px 2px 10px white;
+    }
+ .hero-content p{
+        font-size: 24px;
+        color: #fff8f1;
+        line-height: 1.2;
+    }
 }
 
 .hero{
@@ -211,18 +232,29 @@ a {
 }
 
 .hero-content{
-    color: black;
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.25);
     max-width: 500px;
-
     z-index: 1;
 }
 
-.hero-content p{
-    font-size: 20px;
+.hero-content h1{
+    color:#2f2117;
+    font-size: 64px;
+    line-height: 1.1;
     margin-bottom: 20px;
+    font-family: "Roca-Two";
+}
+
+.hero-content p{
+    color: white;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 footer {
+    font-family: "Roca-Two";
     width: 100%;
     color: var(--color-neutral-40);
 }
@@ -292,7 +324,7 @@ footer {
 }
 
 .footer-list .footer-link:hover{
-    color: #7f37c9;
+    color: var(--cor-hover-footer);
 }
 
 #footer_copyright{
