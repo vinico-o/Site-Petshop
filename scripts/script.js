@@ -5,10 +5,27 @@ const nextButton = document.getElementById("next-button");
 const cards = document.querySelectorAll(".card-servico");
 
 let paginaAtual = 0;
-let totalPaginas = cards.length / 2;
+let totalPaginas = 0;
+
+if (window.innerWidth <= 768) {
+    totalPaginas = cards.length;
+} else {
+    totalPaginas = cards.length / 2;
+}
 
 function carrossel(){
-    track.style.transform = `translateX(-${paginaAtual * 98}%)`;
+    const largura = cards[0].getBoundingClientRect().width;
+    const gap = 20;
+    let deslocamento;
+    //calculando o deslocamento baseado no tamanho do cerd
+    //para nao ter problema com o card ser cortado em algumas partes
+    if (window.innerWidth <= 768) {
+        deslocamento = paginaAtual * (largura + gap);
+    } else {
+        deslocamento = paginaAtual * ((largura * 2) + gap * 2);
+    }
+
+    track.style.transform = `translateX(-${deslocamento}px)`;
 }
 
 nextButton.addEventListener("click", () => {
