@@ -9,6 +9,12 @@
     src: url("../fonts/roca-two-regular-maisfontes.e2ac/roca-two-regular.ttf");
 }
 
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #d6a56f;
+}
+
 :root {
     --color-neutral-0: #2b2118;
     --color-neutral-10: #3a2d22;
