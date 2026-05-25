@@ -236,7 +236,7 @@ a {
 }
 
 .botaoIcone:hover{
-    background-color: #f0f0f0;
+    background-color: var(--cor-nav2);
 }
 
 .sidebar-carrinho{
@@ -246,7 +246,8 @@ a {
     width: 400px;
     max-width: 100%;
     height: 100%;
-    background-color: #d6a56f;
+    background-color: #F3E5D0;
+    font-family: 'Alice';
     box-shadow: -2px 0 10px rgba(0,0,0,0.1);
     transition: right 0.3s ease;
     z-index: 1000;
@@ -263,13 +264,13 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid #eee;
-    font-family: "Roca two";
+    border-bottom: 1px solid #000000;
 }
 
 .carrinho-header h2{
     font-size: 20px;
-    font-family: 'Roca Two';
+    color: #a56a3a;
+    font-family: 'Roca-Two';
 }
 
 .botao-fechar{
@@ -294,13 +295,14 @@ a {
 
 .carrinho-footer {
     padding: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #000000;
 }
 
 .botao-finalizar {
     width: 100%;
     padding: 15px;
-    background-color: #000;
+    background-color: #3a2d22;
+    font-family: 'Roca-Two';
     color: white;
     border: none;
     cursor: pointer;
@@ -322,6 +324,70 @@ a {
 .overlay.ativo {
     opacity: 1;
     visibility: visible;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info img {
+  width: 50px;
+  border-radius: 6px;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qtd {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.qtd button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.qtd button:hover {
+  background: #f0f0f0;
+}
+
+.qtd span {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.remover {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remover:hover {
+  color: red;
 }
 
 
