@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petshop</title>
 
     <link rel="stylesheet" href="style/style.css">
 
@@ -19,6 +18,7 @@
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/carrinho.js"></script>
     <script defer src="scripts/app.js"></script>
+    <title>Pet-Shop</title>
 </head>
 
 <body>
@@ -29,11 +29,11 @@
 
             <ul class="nav-links">
                 <li class="link-escrito"><a href="#">Home</a></li>
-                <li class="link-escrito"><a href="#">Serviços</a></li>
-                <li class="link-escrito"><a href="#">Categorias</a></li>
+                <li class="link-escrito"><a href="#Servicos">Serviços</a></li>
+                <li class="link-escrito"><a href="#produtos">Categorias</a></li>
 
                 <li>
-                    <a href="#">
+                    <a href="login.html">
                         <span class="material-symbols-outlined">person</span>
                     </a>
                 </li>
@@ -86,7 +86,7 @@
             </div>
         </section>
     </main>    
-    <section class="servicos-container">
+    <section class="servicos-container" id="Servicos">
         <h2 class="title-servicos">
             Nossos Serviços
         </h2>
@@ -180,7 +180,7 @@
                 <path fill="#d6a56f" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,74.7C480,75,600,85,720,96C840,107,960,117,1080,122.7C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
             </svg>
     </div>
-    <section class="produtos-container">
+    <section class="produtos-container" id="produtos">
         <h2 class="title-produtos">
             Nossos Produtos
         </h2>
@@ -241,6 +241,9 @@
                 <img src="imgs/produtos/cachorro/Guia.jpg" alt="Guias e Coleiras">
                 <p>Guias e Coleiras</p>
             </div>
+        </div>
+        <div class="button-produtos-container">
+                <a href="pages/produtos.html" target="_blank"><p>Ver Todos os Produtos</p></a>
         </div>
     </section>
     <div class="produtos-bottom-container">
