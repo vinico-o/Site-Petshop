@@ -100,13 +100,17 @@ function render() {
   conteudo.innerHTML = "";
 
   carrinho.forEach(p => {
-    conteudo.innerHTML += `
-  <div class="item">
-    
-    <div class="info">
-      ${p.img ? `<img src="${p.img}">` : ""}
-      <p>${p.nome}</p>
-    </div>
+  // Dependendo de qual pagina estamos, o link da imagem do produto ficará quebrado,
+  // por conta disso, é necessário trocar o link para referenciar corretamente
+  const dentroDePages = window.location.pathname.includes("/pages/");
+  const srcFinal = dentroDePages ? p.img : p.img.replace("../", "");
+
+  conteudo.innerHTML += `
+    <div class="item">
+      <div class="info">
+        <img src="${srcFinal}">
+        <p>${p.nome}</p>
+      </div>
 
     <div class="acoes">
       <div class="qtd">

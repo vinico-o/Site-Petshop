@@ -1,7 +1,5 @@
 const produtos = [
 
-    // ================= Rações Cachorro =================
-
     {
         id: 1,
         nome: "Ração Golden Special Frango e Carne",
@@ -9,7 +7,7 @@ const produtos = [
         tipo: "ração",
         marca: "Golden",
         preco: 159.90,
-        estoque: 10,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Golden Special Frango e Carne.jpg"
     },
 
@@ -20,7 +18,7 @@ const produtos = [
         tipo: "ração",
         marca: "Premier",
         preco: 189.90,
-        estoque: 8,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Premier Formula Adultos.jpg"
     },
 
@@ -31,11 +29,9 @@ const produtos = [
         tipo: "ração",
         marca: "Pedigree",
         preco: 124.90,
-        estoque: 12,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Pedigree Carne e Vegetais.jpg"
     },
-
-    // ================= Recipientes Cachorro =================
 
     {
         id: 4,
@@ -44,7 +40,7 @@ const produtos = [
         tipo: "recipiente",
         marca: "Chalesco",
         preco: 39.90,
-        estoque: 20,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Comedouro Inox Antiderrapante.jpg"
     },
 
@@ -55,7 +51,7 @@ const produtos = [
         tipo: "recipiente",
         marca: "Furacão Pet",
         preco: 59.90,
-        estoque: 15,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Bebedouro Automático Azul.jpg"
     },
 
@@ -66,11 +62,9 @@ const produtos = [
         tipo: "recipiente",
         marca: "Durapets",
         preco: 79.90,
-        estoque: 10,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Kit Comedouro e Bebedouro.jpg"
     },
-
-    // ================= Casinhas e Camas =================
 
     {
         id: 7,
@@ -79,7 +73,7 @@ const produtos = [
         tipo: "casinha e cama",
         marca: "Baw Waw",
         preco: 99.90,
-        estoque: 8,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Cama Fofinha Redonda Cinza.jpg"
     },
 
@@ -90,7 +84,7 @@ const produtos = [
         tipo: "casinha e cama",
         marca: "MecPet",
         preco: 199.90,
-        estoque: 5,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Casinha Plástica Nº 3.jpg"
     },
 
@@ -101,11 +95,9 @@ const produtos = [
         tipo: "casinha e cama",
         marca: "São Pet",
         preco: 149.90,
-        estoque: 7,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Cama Retangular Impermeável.jpg"
     },
-
-    // ================= Brinquedos Cachorro =================
 
     {
         id: 10,
@@ -114,7 +106,7 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Kong",
         preco: 49.90,
-        estoque: 18,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Mordedor Osso de Borracha.jpg"
     },
 
@@ -125,7 +117,7 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Pet Games",
         preco: 34.90,
-        estoque: 25,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Bola Interativa Vermelha.jpg"
     },
 
@@ -136,11 +128,9 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Furacão Pet",
         preco: 24.90,
-        estoque: 30,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Corda Trançada para Cães.jpg"
     },
-
-    // ================= Petiscos Cachorro =================
 
     {
         id: 13,
@@ -149,7 +139,7 @@ const produtos = [
         tipo: "petisco",
         marca: "Keldog",
         preco: 12.90,
-        estoque: 40,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Bifinho Sabor Carne.jpg"
     },
 
@@ -160,7 +150,7 @@ const produtos = [
         tipo: "petisco",
         marca: "Pedigree Dentastix",
         preco: 18.90,
-        estoque: 25,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Snack Dental Médio Porte.jpg"
     },
 
@@ -171,11 +161,9 @@ const produtos = [
         tipo: "petisco",
         marca: "Natural Life",
         preco: 22.90,
-        estoque: 20,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Petisco Natural Frango.jpg"
     },
-
-    // ================= Guias e Coleiras =================
 
     {
         id: 16,
@@ -184,7 +172,7 @@ const produtos = [
         tipo: "guia e coleira",
         marca: "ZeeDog",
         preco: 69.90,
-        estoque: 15,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Coleira Ajustável Azul.jpg"
     },
 
@@ -195,7 +183,7 @@ const produtos = [
         tipo: "guia e coleira",
         marca: "ZeeDog",
         preco: 79.90,
-        estoque: 12,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Guia Premium Preto.jpg"
     },
 
@@ -206,11 +194,9 @@ const produtos = [
         tipo: "guia e coleira",
         marca: "Chalesco",
         preco: 89.90,
-        estoque: 10,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Peitoral Confort Walk.jpg"
     },
-
-    // ================= Rações Gato =================
 
     {
         id: 19,
@@ -219,7 +205,7 @@ const produtos = [
         tipo: "ração",
         marca: "Whiskas",
         preco: 29.90,
-        estoque: 25,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Whiskas Carne Adultos.jpg"
     },
 
@@ -230,7 +216,7 @@ const produtos = [
         tipo: "ração",
         marca: "GranPlus",
         preco: 42.90,
-        estoque: 18,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/GranPlus Gourmet Salmão.jpg"
     },
 
@@ -241,11 +227,9 @@ const produtos = [
         tipo: "ração",
         marca: "Golden",
         preco: 37.90,
-        estoque: 22,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Golden Gatos Castrados.jpg"
     },
-
-    // ================= Recipientes Gato =================
 
     {
         id: 22,
@@ -254,7 +238,7 @@ const produtos = [
         tipo: "recipiente",
         marca: "Furacão Pet",
         preco: 24.90,
-        estoque: 20,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Comedouro Cat Bowl Rosa.jpg"
     },
 
@@ -265,7 +249,7 @@ const produtos = [
         tipo: "recipiente",
         marca: "Amicus",
         preco: 139.90,
-        estoque: 8,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Fonte Bebedouro Elétrica.jpg"
     },
 
@@ -276,11 +260,9 @@ const produtos = [
         tipo: "recipiente",
         marca: "Durapets",
         preco: 49.90,
-        estoque: 12,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Kit Alimentação para Gatos.jpg"
     },
-
-    // ================= Arranhadores =================
 
     {
         id: 25,
@@ -289,7 +271,7 @@ const produtos = [
         tipo: "arranhador",
         marca: "São Pet",
         preco: 89.90,
-        estoque: 10,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Poste Sisal.jpg"
     },
 
@@ -300,7 +282,7 @@ const produtos = [
         tipo: "arranhador",
         marca: "Pet Star",
         preco: 249.90,
-        estoque: 5,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Torre com Plataforma.jpg"
     },
 
@@ -311,11 +293,9 @@ const produtos = [
         tipo: "arranhador",
         marca: "CatMyPet",
         preco: 39.90,
-        estoque: 18,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Ondulado Papelão.jpg"
     },
-
-    // ================= Brinquedos Gato =================
 
     {
         id: 28,
@@ -324,7 +304,7 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Chalesco",
         preco: 19.90,
-        estoque: 30,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Varinha com Penas.jpg"
     },
 
@@ -335,7 +315,7 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Pet Games",
         preco: 14.90,
-        estoque: 35,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Ratinho de Pelúcia.jpg"
     },
 
@@ -346,11 +326,9 @@ const produtos = [
         tipo: "brinquedo",
         marca: "Furacão Pet",
         preco: 9.90,
-        estoque: 50,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Bolinha com Guizo.jpg"
     },
-
-    // ================= Petiscos Gato =================
 
     {
         id: 31,
@@ -359,7 +337,7 @@ const produtos = [
         tipo: "petisco",
         marca: "Dreamies",
         preco: 12.90,
-        estoque: 40,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Dreamies Sabor Frango.jpg"
     },
 
@@ -370,7 +348,7 @@ const produtos = [
         tipo: "petisco",
         marca: "Churu",
         preco: 17.90,
-        estoque: 25,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Snack Cremoso Atum.jpg"
     },
 
@@ -381,11 +359,9 @@ const produtos = [
         tipo: "petisco",
         marca: "Origens",
         preco: 15.90,
-        estoque: 18,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Petisco Funcional Hairball.jpg"
     },
-
-    // ================= Areias =================
 
     {
         id: 34,
@@ -394,7 +370,7 @@ const produtos = [
         tipo: "areia",
         marca: "Pipicat",
         preco: 21.90,
-        estoque: 30,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Areia Pipicat Floral.jpg"
     },
 
@@ -405,7 +381,7 @@ const produtos = [
         tipo: "areia",
         marca: "Viva Verde",
         preco: 39.90,
-        estoque: 20,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Areia Viva Verde Biodegradável.jpg"
     },
 
@@ -416,7 +392,7 @@ const produtos = [
         tipo: "areia",
         marca: "Katbom",
         preco: 34.90,
-        estoque: 15,
+        estoque: 3,
         imagem: "../imgs/lista-produtos/Areia Katbom Premium.jpg"
     }
 ];

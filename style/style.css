@@ -679,7 +679,7 @@ footer {
 }
 
 .produtos-container {
-    height: 140vh;
+    height: auto;
     background-color: #d6a56f;
     padding-bottom: 10px;
     padding-left: 40px;
@@ -723,6 +723,12 @@ footer {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
+}
+
+.produtos-cards-container-gato a,
+.produtos-cards-container-cachorro a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .card-produto {
