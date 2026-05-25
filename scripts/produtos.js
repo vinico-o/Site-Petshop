@@ -423,7 +423,7 @@ const produtos = [
 
 const lista = document.getElementById("lista-produtos")
 
-function renderizar_produtos() {
+function renderizar_produtos(produtos) {
     //limpa a lista anterior para atualizar posteriormente
     lista.innerHTML = "";
 
@@ -445,4 +445,47 @@ function renderizar_produtos() {
     })
 }
 
-renderizar_produtos();
+// coleta todos os checkboxes da área de filtros
+const filtros = document.querySelectorAll(
+    ".products-filter-text input[type='checkbox']"
+);
+
+function get_filtros_selecionados() {
+    const selecionados = []
+
+    //percorre o array de filtros
+    filtros.forEach(filtro => {
+
+        if(filtro.checked) {
+            selecionados.push(filtro.value)
+        }
+    })
+
+    return selecionados;
+}
+
+function aplicar_filtros() {
+
+    const filtros_selecionados = get_filtros_selecionados();
+
+    //caso nenhum filtro for escolhido
+    if(filtros_selecionados.length === 0) {
+        renderizar_produtos(produtos);
+        return;
+    }
+
+    // cria uma nova lista com os filtros aplicados
+    const produtos_filtrados = produtos.filter(produto => {
+        return filtros_selecionados.includes(produto.animal) || filtros_selecionados.includes(produto.tipo);
+    });
+
+    renderizar_produtos(produtos_filtrados);
+
+}
+
+// aplica os filtros quando um checkboxé clicado
+filtros.forEach(filtro => {
+    filtro.addEventListener("change", aplicar_filtros);
+});
+
+renderizar_produtos(produtos);
