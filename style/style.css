@@ -609,11 +609,11 @@ footer {
     background-color: #A56A3A;
     line-height: 0%; /*remove espaço em branco entre as duas divs*/
     width: 100%;
-    height: auto; 
+    height: 20vh; 
 }
 
 .produtos-container {
-    height: 120vh;
+    height: 140vh;
     background-color: #d6a56f;
     padding-bottom: 10px;
     padding-left: 40px;
@@ -696,6 +696,7 @@ footer {
 }
 
 .button-produtos-container {
+    margin-bottom: 20px;
     background-color: #A56A3A;
     border: 3px solid transparent;
     padding: 10px;
@@ -726,7 +727,7 @@ footer {
     background-color: #d6a56f;
     line-height: 0%; /*remove espaço em branco entre as duas divs*/
     width: 100%;
-    height: auto; 
+    height: 20vh; 
 }
 
 .parceiros-container {
@@ -926,7 +927,7 @@ footer {
 
 .sobrenos-bottom-container {
     width: 100%;
-    height: auto;
+    height: 20vh;
     /*deixando margem negativa para remover uma linha branca do svg*/
     margin-bottom: -5px;
     margin-top: -5px;
@@ -978,6 +979,10 @@ footer {
     .sobrenos {
         margin-top: -1px;
         border-radius: 0px;
+    }
+
+    .sobrenos-bottom-container {
+        height: auto;
     }
 
     .galeria {
