@@ -27,6 +27,279 @@
     --cor-hover-footer: #d6a56f;
 }
 
+.header{
+    padding-inline: 16px;
+    background: var(--cor-nav);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    padding-block: 16px;
+}
+
+.nav-links a:hover{
+    color: var(--cor-nav2);
+}
+
+.logo {
+    font-family: "Roca-Two";
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--cor-nav2);
+}
+
+.pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pesquisa input{
+    width: 0;
+    opacity: 0;
+    border: none;
+    padding: 5px 0px 8px 10px;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.pesquisa.active input{
+    width: 200px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.botaopesquisa:hover {
+    color: var(--cor-nav2);
+}
+.botaopesquisa{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.link-escrito {
+    padding-top: 5px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+    .nav-links{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--cor-nav);
+        clip-path: circle(100px at 90% -15%);
+        transition: 0.4s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .nav-links a {
+        
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) a {
+        transition: 0.1s;
+    }
+
+    .nav-links li:nth-child(2) a {
+        transition: 0.11s;
+    }
+
+    .nav-links li:nth-child(3) a {
+        transition: 0.12s;
+    }
+
+    .nav-links li:nth-child(4) a {
+        transition: 0.13s;
+    }
+
+    .nav-links li:nth-child(5) a {
+        transition: 0.14s;
+    }
+    .navbar.active .nav-links {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .navbar.active .nav-links a {
+        opacity: 1;
+    }
+    .navbar.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    .navbar.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    .navbar.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+.botaoIcone{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoIcone:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar-carrinho{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #d6a56f;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-carrinho.ativo{
+    right: 0;
+}
+
+.carrinho-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-family: "Roca two";
+}
+
+.carrinho-header h2{
+    font-size: 20px;
+    font-family: 'Roca Two';
+}
+
+.botao-fechar{
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+.carrinho-conteudo{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrinho-vazio{
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+}
+
+.carrinho-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.botao-finalizar {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
 .products-container {
     margin: 35px 40px 0px 0px;
     min-height: 100vh;
@@ -192,17 +465,16 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 16px;
-    }
 
     .products-container {
         flex-direction: column;
+        margin: 16px;
     }
 
     .products-filter-container {
         width: 100%;
         padding: 12px;
+        margin: 16px;
     }
 
     .products-filter-title {

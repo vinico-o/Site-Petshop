@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/produtos.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <script defer src="../scripts/produtos.js"></script>
+    <script defer src="../scripts/app.js"></script>
+    <script defer src="../scripts/carrinho.js"></script>
     <title>Produtos</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">PETSHOP</div>
+            <button class="hamburger"></button>
+
+            <ul class="nav-links">
+                <li class="link-escrito"><a href="#">Home</a></li>
+                <li class="link-escrito"><a href="#Servicos">Serviços</a></li>
+                <li class="link-escrito"><a href="#produtos">Categorias</a></li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </li>
+
+                <li>
+                    <button id="abrirCarrinho" class="botaoIcone">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </button>
+                </li>
+
+                <li>
+                    <div class="pesquisa">
+                        <button class="botaopesquisa">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="sidebar-carrinho" id="sidebarCarrinho">
+            <div class="carrinho-header">
+                <h2>Seu Carrinho</h2>
+                <button class="botao-fechar" id="fecharCarrinho">&times;</button>
+            </div>
+
+            <div class="carrinho-conteudo">
+                Seu carrinho está vazio
+            </div>
+
+            <div class="carrinho-footer">
+                <button class="botao-finalizar">Finalizar Compra</button>
+            </div>
+        </div>
         <section class="products-container">
             <div class="products-filter-container">
                 <p class="products-filter-title">Filtrar Produtos</p>
