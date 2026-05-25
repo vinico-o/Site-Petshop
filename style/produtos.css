@@ -192,15 +192,14 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 16px;
-    }
 
     .products-container {
+        margin: 25px 20px 0px 0px;
         flex-direction: column;
     }
 
     .products-filter-container {
+        margin: 25px 0px 0px 20px;
         width: 100%;
         padding: 12px;
     }
@@ -225,7 +224,7 @@
     }
 
     .list-product-container {
-        margin: 20px 0 0 0;
+        margin: 25px 0px 0px 20px;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
