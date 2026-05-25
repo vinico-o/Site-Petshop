@@ -434,7 +434,7 @@ function renderizar_produtos(produtos) {
             <div class="card-product">
                 <div class="card-image-container">
                     <img class="image-product" src="${produto.imagem}">
-                    <button id="cart-button">
+                    <button id="cart-button" class="add-to-cart"  data-id=" " data-nome=" " data-img=" ">
                         <img src="../imgs/buttons/plus_symbol.png" alt="Adicionar ao carrinho">
                     </button>
                 </div>
