@@ -209,6 +209,7 @@ a {
     transform: rotate(-135deg);
     top: -7px;
 }
+
 .hero-content h1{
         font-size: 42px;
         line-height: 0.95;
@@ -221,6 +222,110 @@ a {
         line-height: 1.2;
     }
 }
+
+/*============================== Carrinho de Compras ==================================*/
+.botaoIcone{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoIcone:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar-carrinho{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #d6a56f;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-carrinho.ativo{
+    right: 0;
+}
+
+.carrinho-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-family: "Roca two";
+}
+
+.carrinho-header h2{
+    font-size: 20px;
+    font-family: 'Roca Two';
+}
+
+.botao-fechar{
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+.carrinho-conteudo{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrinho-vazio{
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+}
+
+.carrinho-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.botao-finalizar {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*=====================================================================================*/
 
 .hero{
     height: 500px;
