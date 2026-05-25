@@ -444,57 +444,6 @@
     align-self: self-start;
 }
 
-/*======================================================================*/
-/* Container da imagem */
-.card-image-container {
-  position: relative;
-  width: 100%;
-}
-
-/* Imagem do produto */
-.image-product {
-  width: 100%;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Botão */
-.add-to-cart {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-
-  width: 42px;
-  height: 42px;
-
-  background-color: #d6a56f;
-  border: none;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-/* Ícone dentro do botão */
-.add-to-cart img {
-  width: 18px;
-  height: 18px;
-  pointer-events: none;
-}
-
-/* Hover */
-.add-to-cart:hover {
-  transform: scale(1.1);
-  background-color: #A56A3A;
-}
-/*=============================================================*/
-
 #cart-button {
     background-color: #d6a56f;
     border-radius: 30px;
