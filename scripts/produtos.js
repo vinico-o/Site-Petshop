@@ -431,17 +431,20 @@ function renderizar_produtos(produtos) {
         // cria uma div (será o card)
 
         lista.innerHTML += `
-            <div class="card-product">
-                <div class="card-image-container">
-                    <img class="image-product" src="${produto.imagem}">
-                    <button id="cart-button" class="add-to-cart"  data-id=" " data-nome=" " data-img=" ">
-                        <img src="../imgs/buttons/plus_symbol.png" alt="Adicionar ao carrinho">
-                    </button>
-                </div>
-                <p class="card-name">${produto.nome}</p>
-                <p class="card-price">R$ ${produto.preco.toFixed(2)}</p>
-            </div>
-        `
+    <div class="card-product">
+        <div class="card-image-container">
+            <img class="image-product" src="${produto.imagem}">
+            <button class="add-to-cart"
+                data-id="${produto.id}"
+                data-nome="${produto.nome}"
+                data-img="${produto.imagem}">
+                <img src="../imgs/buttons/plus_symbol.png">
+            </button>
+        </div>
+        <p class="card-name">${produto.nome}</p>
+        <p class="card-price">R$ ${produto.preco.toFixed(2)}</p>
+    </div>
+`;  
     })
 }
 

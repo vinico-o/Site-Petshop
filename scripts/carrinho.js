@@ -30,10 +30,9 @@ const conteudo = document.querySelector('.carrinho-conteudo');
 
 document.addEventListener("click", (e) => {
 
-  if (e.target.classList.contains("add-to-cart")) {
+  const btn = e.target.closest(".add-to-cart");
 
-    const btn = e.target;
-
+  if (btn) {
     if (!btn.dataset.id) {
       console.warn("Produto sem ID");
       return;
@@ -57,7 +56,7 @@ document.addEventListener("click", (e) => {
     salvarCarrinho();
     render();
     toggle(true);
-  }
+  };
 
   if (e.target.classList.contains("mais")) {
     const item = carrinho.find(p => p.id === e.target.dataset.id);
