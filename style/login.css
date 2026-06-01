@@ -1,0 +1,158 @@
+body {
+    font-family: 'poppins',sans-serif;
+    background-color: #f8efe4;
+    transition: 0.5s;
+}
+
+body.dark-mode {
+    background-color: #2A1B14;
+}
+
+.caixa-login{
+    background: #fff8f1;
+    box-shadow: 0 10px 30px rgba(58,45,34,0.15);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 30px;
+    border: 1px solid #e8d7c3;
+    width: 25%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px 30px 20px 30px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    .caixa-login{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .caixa-login{
+        width: 40%;
+    }
+}
+
+.caixa-login h1{
+    text-align: center;
+    color: #2A1B14;
+    transition: 0.5s;
+}
+
+.caixa-login.dark-mode{
+    background-color: #E8DED4;
+}
+
+.caixa-login h1.dark-mode {
+    color: #D29A5A;
+}
+
+.tema {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f3e5d0;
+    color: #2A1B14;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+input.dark-mode {
+    background-color: #5A4030;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+form button{
+    width: 40%;
+    border: none;
+    background-color: #A56A3A;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff8f1;
+    transition: 0.5s;
+}
+
+form button.dark-mode{
+    background-color: #D29A5A;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #d6a56f;
+}
+
+form button.dark-mode:hover {
+    background-color: #e7c9a9;
+}
+
+form button:focus {
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 48%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d2bda3;
+    border-radius: 34px;
+    transition: 0.5s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.switch input:checked + .slider{
+    background-color: #C98B4A;
+}
+
+.switch input:checked +.slider:before{
+    transform: translateX(26px)
+}
