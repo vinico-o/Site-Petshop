@@ -55,7 +55,7 @@ loginButton.addEventListener("click", function(event){
     if(autenticado){
         alert("Login realizado!");
 
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }
     else{
         alert("Usuário ou senha incorretos.");
