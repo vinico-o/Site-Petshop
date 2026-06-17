@@ -1,4 +1,18 @@
-const produtos = [
+//criando uma interface que já deixa a estrutura pré definida do array
+// bom para nao repetir muito o codigo
+interface Produto {
+    id: number;
+    nome: string;
+    animal: string;
+    tipo: string;
+    marca: string;
+    preco: number;
+    estoque: number;
+    imagem: string;
+}
+
+const produtos: Produto[] = [
+
     {
         id: 1,
         nome: "Ração Golden Special Frango e Carne",
@@ -9,6 +23,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Golden Special Frango e Carne.jpg"
     },
+
     {
         id: 2,
         nome: "Ração Premier Formula Adultos",
@@ -19,6 +34,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Premier Formula Adultos.jpg"
     },
+
     {
         id: 3,
         nome: "Ração Pedigree Carne e Vegetais",
@@ -29,6 +45,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Ração Pedigree Carne e Vegetais.jpg"
     },
+
     {
         id: 4,
         nome: "Comedouro Inox Antiderrapante",
@@ -39,6 +56,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Comedouro Inox Antiderrapante.jpg"
     },
+
     {
         id: 5,
         nome: "Bebedouro Automático Azul",
@@ -49,6 +67,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Bebedouro Automático Azul.jpg"
     },
+
     {
         id: 6,
         nome: "Kit Comedouro e Bebedouro",
@@ -59,6 +78,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Kit Comedouro e Bebedouro.jpg"
     },
+
     {
         id: 7,
         nome: "Cama Fofinha Redonda Cinza",
@@ -69,6 +89,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Cama Fofinha Redonda Cinza.jpg"
     },
+
     {
         id: 8,
         nome: "Casinha Plástica Nº 3",
@@ -79,6 +100,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Casinha Plástica Nº 3.jpg"
     },
+
     {
         id: 9,
         nome: "Cama Retangular Impermeável",
@@ -89,6 +111,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Cama Retangular Impermeável.jpg"
     },
+
     {
         id: 10,
         nome: "Mordedor Osso de Borracha",
@@ -99,6 +122,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Mordedor Osso de Borracha.jpg"
     },
+
     {
         id: 11,
         nome: "Bola Interativa Vermelha",
@@ -109,6 +133,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Bola Interativa Vermelha.jpg"
     },
+
     {
         id: 12,
         nome: "Corda Trançada para Cães",
@@ -119,6 +144,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Corda Trançada para Cães.jpg"
     },
+
     {
         id: 13,
         nome: "Bifinho Sabor Carne",
@@ -129,6 +155,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Bifinho Sabor Carne.jpg"
     },
+
     {
         id: 14,
         nome: "Snack Dental Médio Porte",
@@ -139,6 +166,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Snack Dental Médio Porte.jpg"
     },
+
     {
         id: 15,
         nome: "Petisco Natural Frango",
@@ -149,6 +177,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Petisco Natural Frango.jpg"
     },
+
     {
         id: 16,
         nome: "Coleira Ajustável Azul",
@@ -159,6 +188,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Coleira Ajustável Azul.jpg"
     },
+
     {
         id: 17,
         nome: "Guia Premium Preto",
@@ -169,6 +199,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Guia Premium Preto.jpg"
     },
+
     {
         id: 18,
         nome: "Peitoral Confort Walk",
@@ -179,6 +210,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Peitoral Confort Walk.jpg"
     },
+
     {
         id: 19,
         nome: "Whiskas Carne Adultos",
@@ -189,6 +221,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Whiskas Carne Adultos.jpg"
     },
+
     {
         id: 20,
         nome: "GranPlus Gourmet Salmão",
@@ -199,6 +232,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/GranPlus Gourmet Salmão.jpg"
     },
+
     {
         id: 21,
         nome: "Golden Gatos Castrados",
@@ -209,6 +243,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Golden Gatos Castrados.jpg"
     },
+
     {
         id: 22,
         nome: "Comedouro Cat Bowl Rosa",
@@ -219,6 +254,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Comedouro Cat Bowl Rosa.jpg"
     },
+
     {
         id: 23,
         nome: "Fonte Bebedouro Elétrica",
@@ -229,6 +265,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Fonte Bebedouro Elétrica.jpg"
     },
+
     {
         id: 24,
         nome: "Kit Alimentação para Gatos",
@@ -239,6 +276,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Kit Alimentação para Gatos.jpg"
     },
+
     {
         id: 25,
         nome: "Arranhador Poste Sisal",
@@ -249,6 +287,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Poste Sisal.jpg"
     },
+
     {
         id: 26,
         nome: "Arranhador Torre com Plataforma",
@@ -259,6 +298,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Torre com Plataforma.jpg"
     },
+
     {
         id: 27,
         nome: "Arranhador Ondulado Papelão",
@@ -269,6 +309,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Arranhador Ondulado Papelão.jpg"
     },
+
     {
         id: 28,
         nome: "Varinha com Penas",
@@ -279,6 +320,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Varinha com Penas.jpg"
     },
+
     {
         id: 29,
         nome: "Ratinho de Pelúcia",
@@ -289,6 +331,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Ratinho de Pelúcia.jpg"
     },
+
     {
         id: 30,
         nome: "Bolinha com Guizo",
@@ -299,6 +342,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Bolinha com Guizo.jpg"
     },
+
     {
         id: 31,
         nome: "Dreamies Sabor Frango",
@@ -309,6 +353,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Dreamies Sabor Frango.jpg"
     },
+
     {
         id: 32,
         nome: "Snack Cremoso Atum",
@@ -319,6 +364,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Snack Cremoso Atum.jpg"
     },
+
     {
         id: 33,
         nome: "Petisco Funcional Hairball",
@@ -329,6 +375,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Petisco Funcional Hairball.jpg"
     },
+
     {
         id: 34,
         nome: "Areia Pipicat Floral",
@@ -339,6 +386,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Areia Pipicat Floral.jpg"
     },
+
     {
         id: 35,
         nome: "Areia Viva Verde Biodegradável",
@@ -349,6 +397,7 @@ const produtos = [
         estoque: 3,
         imagem: "../imgs/lista-produtos/Areia Viva Verde Biodegradável.jpg"
     },
+
     {
         id: 36,
         nome: "Areia Katbom Premium",
@@ -360,11 +409,15 @@ const produtos = [
         imagem: "../imgs/lista-produtos/Areia Katbom Premium.jpg"
     }
 ];
-const lista = document.querySelector("#lista-produtos");
-function renderizar_produtos(produtos) {
+
+const lista = document.querySelector<HTMLDivElement>("#lista-produtos")!;
+
+function renderizar_produtos(produtos: Produto[]): void {
     lista.innerHTML = "";
+
     produtos.forEach(produto => {
         // cria uma div (será o card)
+
         lista.innerHTML += `
         <div class="card-product">
             <div class="card-image-container">
@@ -379,33 +432,48 @@ function renderizar_produtos(produtos) {
             <p class="card-name">${produto.nome}</p>
             <p class="card-price">R$ ${produto.preco.toFixed(2)}</p>
         </div>
-    `;
-    });
+    `;  
+    })
 }
+
 //define filtros como inputs do tipo checkbox
-const filtros = document.querySelectorAll(".products-filter-text input[type='checkbox']");
-function get_filtros_selecionados() {
-    const selecionados = [];
+const filtros = document.querySelectorAll<HTMLInputElement>(".products-filter-text input[type='checkbox']");
+
+function get_filtros_selecionados(): string[] {
+    const selecionados: string[] = [];
+
     filtros.forEach(filtro => {
-        if (filtro.checked) {
+        if(filtro.checked) {
             selecionados.push(filtro.value);
         }
     });
+
+
     return selecionados;
 }
-function aplicar_filtros() {
+
+function aplicar_filtros(): void {
+
     const filtros_selecionados = get_filtros_selecionados();
-    if (filtros_selecionados.length === 0) {
+
+    if(filtros_selecionados.length === 0) {
         renderizar_produtos(produtos);
         return;
     }
+
     const produtos_filtrados = produtos.filter(produto => {
         return filtros_selecionados.includes(produto.animal) || filtros_selecionados.includes(produto.tipo);
     });
+
     renderizar_produtos(produtos_filtrados);
+
 }
+
 filtros.forEach(filtro => {
     filtro.addEventListener("change", aplicar_filtros);
 });
+
 renderizar_produtos(produtos);
+
+//evita o escopo global (remove o erro de variavel declarada duas vezes ou algo do tipo)
 export {};
