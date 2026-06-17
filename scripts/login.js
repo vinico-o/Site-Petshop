@@ -26,6 +26,11 @@ function switchTheme() {
     });
     loginButton.classList.toggle("dark-mode");
 }
+
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", switchTheme);
+
 loginButton.addEventListener("click", function (event) {
     event.preventDefault();
     const usuarioDigitado = document.getElementById("usuario").value; //elemento é campo de entrada

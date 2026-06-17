@@ -30,7 +30,7 @@ const usuarios: Usuario[] = [
 function switchTheme(): void { //void porque a função não retorna valor
     caixaLogin.classList.toggle("dark-mode");
     body.classList.toggle("dark-mode");
-    h1.classList.toggle("dark-mode");
+    h1?.classList.toggle("dark-mode");
 
     inputs.forEach((input) => {
         input.classList.toggle("dark-mode");
@@ -51,14 +51,13 @@ loginButton.addEventListener("click", function(event: MouseEvent): void { //even
 
     let autenticado = false;
 
-    for (let i = 0; i < usuarios.length; i++) {
-
+    for (const usuario of usuarios) {
         if (
-            usuarios[i].usuario === usuarioDigitado &&
-            usuarios[i].senha === senhaDigitada
+            usuario.usuario === usuarioDigitado &&
+            usuario.senha === senhaDigitada
         ) {
-            autenticado = true;
-            break;
+        autenticado = true;
+        break;
         }
     }
 
