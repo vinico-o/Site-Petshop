@@ -1,3 +1,5 @@
+const botaoTema = document.getElementById("botao-tema") as HTMLInputElement | null;
+
 interface Usuario { //colocando usuario e senhas como strings
     usuario: string;
     senha: string;
@@ -69,3 +71,7 @@ loginButton.addEventListener("click", function(event: MouseEvent): void { //even
     }
 
 });
+
+if (botaoTema) {
+    botaoTema.addEventListener("change", switchTheme);
+}

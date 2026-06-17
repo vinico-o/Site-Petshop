@@ -408,4 +408,5 @@ filtros.forEach(filtro => {
     filtro.addEventListener("change", aplicar_filtros);
 });
 renderizar_produtos(produtos);
+//evita o escopo global (remove o erro de variavel declarada duas vezes ou algo do tipo)
 export {};
