@@ -7,26 +7,26 @@ interface Usuario {
 }
 
 export function Login({ aoNavegar }: { aoNavegar: (pagina: 'home' | 'login') => void }) {
-    // 1. Estados para controlar o que o usuário digita nos inputs
+    
     const [usuarioDigitado, setUsuarioDigitado] = useState('');
     const [senhaDigitada, setSenhaDigitada] = useState('');
 
-    // 2. Estado para controlar se o Dark Mode está ativo ou não
+
     const [isDarkMode, setIsDarkMode] = useState(false);
 
-    // Lista de usuários válidos
+
     const usuarios: Usuario[] = [
         { usuario: "dani", senha: "1234" },
         { usuario: "tasso", senha: "1234" },
         { usuario: "mardegan", senha: "1234" }
     ];
 
-    // 3. Função do Tema: Apenas inverte o estado (true/false)
+
     const switchTheme = () => {
         setIsDarkMode(!isDarkMode);
     };
 
-    // 4. Função de Login adaptada para o React
+  
     const handleLogin = (event: React.FormEvent) => {
         event.preventDefault();
 
@@ -47,10 +47,8 @@ export function Login({ aoNavegar }: { aoNavegar: (pagina: 'home' | 'login') => 
         }
     };
 
-    // 5. Definimos a classe 'dark-mode' dinamicamente com base no estado 'isDarkMode'
     const classeDark = isDarkMode ? 'dark-mode' : '';
 
-    // APENAS UM RETORNO UNIFICADO: Unindo sua estrutura original com a lógica do React
     return (
         <>
             <div className={`login-page-wrapper ${classeDark}`} style={{ minHeight: '100vh' }}>

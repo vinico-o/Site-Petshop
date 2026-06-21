@@ -4,11 +4,10 @@ import './style.css'
 
 
 function Home({ aoNavegar }: { aoNavegar: (pagina: 'home' | 'login') => void }) {
-// 1. Estados para controlar se o menu e a pesquisa estão ativos
   const [isNavActive, setIsNavActive] = useState(false);
   const [isPesquisaActive, setIsPesquisaActive] = useState(false);
 
-  // 2. Funções que alternam (toggle) esses estados
+
   const toggleNavbar = () => {
     setIsNavActive(prev => !prev);
   };
@@ -20,11 +19,10 @@ function Home({ aoNavegar }: { aoNavegar: (pagina: 'home' | 'login') => void }) 
   return (
         <>
         <header className="header">
-          {/* 3. Injeta a classe 'active' dinamicamente se isNavActive for true */}
           <nav className={`navbar ${isNavActive ? 'active' : ''}`}>
   <div className="logo">PETSHOP</div>
   
-  {/* Botão vazio para ativar os pseudo-elementos ::before e ::after do CSS original */}
+
   <button className="hamburger" onClick={toggleNavbar}></button>
 
             <ul className="nav-links">
@@ -51,9 +49,9 @@ function Home({ aoNavegar }: { aoNavegar: (pagina: 'home' | 'login') => void }) 
               </li>
 
               <li>
-                {/* 5. Injeta a classe 'active' dinamicamente na pesquisa se isPesquisaActive for true */}
+              
                 <div className={`pesquisa ${isPesquisaActive ? 'active' : ''}`}>
-                  {/* 6. Adiciona o evento de clique no botão de pesquisa */}
+                  
                   <button className="botaopesquisa" onClick={togglePesquisa}>
                     <span className="material-symbols-outlined">search</span>
                   </button>

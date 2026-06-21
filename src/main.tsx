@@ -1,7 +1,7 @@
 import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Home from './pages/Home' // Certifique-se de usar { Home } se não for export default
+import Home from './pages/Home'
 import Login from './pages/Login/Login'
 
 function App() {

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* 1. Ajuste nos caminhos das fontes partindo da pasta public */
 @font-face{
     font-family: "Alice";
     src: url("../public/fonts/Alice/Alice-Regular.ttf");
@@ -65,7 +64,7 @@ a {
     list-style: none;
     display: flex;
     gap: 20px;
-    align-items: center; /* Garante alinhamento vertical no desktop */
+    align-items: center; 
 }
 
 .nav-links a{
@@ -143,7 +142,6 @@ a {
     padding-top: 5px;
 }
 
-/* Hambúrguer restaurado para usar a sua lógica de pseudo-elementos */
 .hamburger {
     display: none;
     border: none;
@@ -170,7 +168,7 @@ a {
 @media (max-width: 750px) {
     .hamburger {
         display: block;
-        z-index: 1001; /* Fica acima do menu */
+        z-index: 1001; 
     }
     .nav-links{
         position: fixed;
@@ -198,7 +196,6 @@ a {
     .nav-links li:nth-child(4) a { transition: 0.13s; }
     .nav-links li:nth-child(5) a { transition: 0.14s; }
 
-    /* REGRAS ACTIVE DO REACT MUDADAS PARA .navbar.active */
     .navbar.active .nav-links {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
@@ -234,7 +231,6 @@ a {
     }
 }
 
-/* 2. Ajuste no caminho da imagem de fundo do Hero na pasta public */
 .hero{
     height: 500px;
     background-image: url("../public/imgs/hero/imagem-inicio.jpg");
